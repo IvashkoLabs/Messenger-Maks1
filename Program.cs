@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Messenger_Maks.API;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,9 +15,12 @@ namespace Messenger_Maks
         [STAThread]
         static void Main()
         {
+            var server = new Messenger_Maks.API.SimpleHttpServer();
+            server.Start(); 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            new SimpleHttpServer().Start();
         }
     }
 }

@@ -1,0 +1,41 @@
+{
+	"info": {
+		"name": "Messenger Lab 2 - Maks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send Message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Sender\": \"PostmanUser\",\n    \"Receiver\": \"General\",\n    \"Text\": \"Hello from API!\"\n}",
+					"options": { "raw": { "language": "json" } }
+				},
+				"url": {
+					"raw": "http://localhost:5000/messages",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "5000",
+					"path": ["messages"]
+				}
+			}
+		},
+		{
+			"name": "Get History",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/history",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "5000",
+					"path": ["history"]
+				}
+			}
+		}
+	]
+}

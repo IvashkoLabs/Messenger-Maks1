@@ -9,7 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
-
+using Messenger_Maks.Models; 
+using Messenger_Maks.Services; 
 namespace Messenger_Maks
 {
     public partial class ChatForm : Form
@@ -59,7 +60,7 @@ namespace Messenger_Maks
             string selected = listBox1.SelectedItem.ToString();
             bool shouldShow = false;
 
-            if (selected == "General Chat" && msg.Receiver == "General")
+            if (selected == "General Chat" && msg.ConversationId == "General")
             {
                 shouldShow = true;
                 msg.DeliveryStatus[_currentUser] = true; 
@@ -70,25 +71,25 @@ namespace Messenger_Maks
                 if (selected.Contains("notes"))
                 {
                     string targetUser = selected.Replace(" notes", "");
-                    shouldShow = (msg.Sender == targetUser && msg.Receiver == targetUser);
+                    shouldShow = (msg.SenderId == targetUser && msg.ConversationId == targetUser);
                 }
                 else if (selected.Contains("-"))
                 {
                     string[] users = selected.Split('-');
-                    shouldShow = (msg.Sender == users[0] && msg.Receiver == users[1]) || (msg.Sender == users[1] && msg.Receiver == users[0]);
+                    shouldShow = (msg.SenderId == users[0] && msg.ConversationId == users[1]) || (msg.SenderId == users[1] && msg.ConversationId == users[0]);
                 }
             }
 
             else
             {
-                shouldShow = (msg.Sender == selected && msg.Receiver == _currentUser) || (msg.Sender == _currentUser && msg.Receiver == selected);
+                shouldShow = (msg.SenderId == selected && msg.ConversationId == _currentUser) || (msg.SenderId == _currentUser && msg.ConversationId == selected);
             }
 
             if (shouldShow)
             {
                 this.Invoke(new Action(() => 
                 {
-                    AddMessageBubble(msg.Text, msg.Sender == _currentUser, msg.Sender, msg);
+                    AddMessageBubble(msg.Text, msg.SenderId == _currentUser, msg.SenderId, msg);
                 }));
             }
         }
@@ -163,7 +164,7 @@ namespace Messenger_Maks
             {
                 bool show = false;
 
-                if (selected == "General Chat" && msg.Receiver == "General")
+                if (selected == "General Chat" && msg.ConversationId == "General")
                 {
                     show = true;
                     msg.DeliveryStatus[_currentUser] = true; 
@@ -173,22 +174,22 @@ namespace Messenger_Maks
                     if (selected.Contains("notes"))
                     {
                         string targetUser = selected.Replace(" notes", "");
-                        show = (msg.Sender == targetUser && msg.Receiver == targetUser);
+                        show = (msg.SenderId == targetUser && msg.ConversationId == targetUser);
                     }
                     else if (selected.Contains("-"))
                     {
                         string[] users = selected.Split('-');
-                        show = (msg.Sender == users[0] && msg.Receiver == users[1]) ||
-                               (msg.Sender == users[1] && msg.Receiver == users[0]);
+                        show = (msg.SenderId == users[0] && msg.ConversationId == users[1]) ||
+                               (msg.SenderId == users[1] && msg.ConversationId == users[0]);
                     }
                 }
                 else
                 {
-                    show = (msg.Sender == _currentUser && msg.Receiver == selected) ||
-                           (msg.Sender == selected && msg.Receiver == _currentUser);
+                    show = (msg.SenderId == _currentUser && msg.ConversationId == selected) ||
+                           (msg.SenderId == selected && msg.ConversationId == _currentUser);
                 }
 
-                if (show) AddMessageBubble(msg.Text, msg.Sender == _currentUser, msg.Sender, msg);
+                if (show) AddMessageBubble(msg.Text, msg.SenderId == _currentUser, msg.SenderId, msg);
             }
         }
 

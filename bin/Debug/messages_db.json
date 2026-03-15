@@ -8,7 +8,8 @@
     "DeliveryStatus": {
       "User1": true,
       "Admin": true,
-      "User2": true
+      "User2": true,
+      "User3": true
     }
   },
   {
@@ -42,7 +43,10 @@
     "Text": "type your messege here...",
     "CreatedAt": "2026-03-10T20:37:24.8479782+02:00",
     "DeliveryStatus": {
-      "User2": true
+      "User2": true,
+      "User3": true,
+      "User1": true,
+      "Admin": true
     }
   },
   {
@@ -51,7 +55,11 @@
     "SenderId": "User2",
     "Text": "type your messege here...",
     "CreatedAt": "2026-03-10T20:37:48.943072+02:00",
-    "DeliveryStatus": {}
+    "DeliveryStatus": {
+      "User3": true,
+      "User1": true,
+      "Admin": true
+    }
   },
   {
     "MessageId": "3ac49bb9-3293-4829-9269-5840a7661654",
@@ -59,7 +67,11 @@
     "SenderId": "Postman",
     "Text": "this messege was sent by API postman",
     "CreatedAt": "2026-03-10T21:43:05.6029593+02:00",
-    "DeliveryStatus": {}
+    "DeliveryStatus": {
+      "User3": true,
+      "User1": true,
+      "Admin": true
+    }
   },
   {
     "MessageId": "3d62d342-e1d2-45ec-a7fe-6e9e4b5c3f02",
@@ -67,7 +79,11 @@
     "SenderId": "Postman",
     "Text": "this messege was sent by API postman",
     "CreatedAt": "2026-03-10T21:44:14.3693045+02:00",
-    "DeliveryStatus": {}
+    "DeliveryStatus": {
+      "User3": true,
+      "User1": true,
+      "Admin": true
+    }
   },
   {
     "MessageId": "9cf36bad-8f1e-4d7b-a0e1-32d9f7fbafad",
@@ -83,6 +99,75 @@
     "SenderId": "Postman",
     "Text": "this messege was sent by API postman",
     "CreatedAt": "2026-03-10T21:45:18.2114021+02:00",
+    "DeliveryStatus": {
+      "User3": true,
+      "User1": true,
+      "Admin": true
+    }
+  },
+  {
+    "MessageId": "1c764c11-a867-47c9-915f-907549f04659",
+    "ConversationId": "General",
+    "SenderId": "Postman",
+    "Text": "this messege was sent by API postman111",
+    "CreatedAt": "2026-03-12T08:53:09.7662814+02:00",
+    "DeliveryStatus": {
+      "User1": true,
+      "Admin": true
+    }
+  },
+  {
+    "MessageId": "fe7ac9dd-96fd-4711-99f5-69e95d0910cd",
+    "ConversationId": "General",
+    "SenderId": "Postman",
+    "Text": "this messege was sent by API postma",
+    "CreatedAt": "2026-03-12T08:59:01.923655+02:00",
+    "DeliveryStatus": {
+      "Admin": true,
+      "User1": true
+    }
+  },
+  {
+    "MessageId": "ccfb27d0-7ce7-4dc4-9912-f884ef8b8f7c",
+    "ConversationId": "General",
+    "SenderId": "Admin",
+    "Text": "type your messege here...",
+    "CreatedAt": "2026-03-14T19:31:16.0748141+02:00",
+    "DeliveryStatus": {
+      "Admin": true,
+      "User1": true
+    }
+  },
+  {
+    "MessageId": "51fe98b6-5734-49f9-8e3e-106c19632fe0",
+    "ConversationId": "Admin",
+    "SenderId": "User1",
+    "Text": "type your messege here...",
+    "CreatedAt": "2026-03-14T19:31:54.296939+02:00",
+    "DeliveryStatus": {}
+  },
+  {
+    "MessageId": "18f071e6-1524-49c4-8f3c-86408ffa6005",
+    "ConversationId": "User1",
+    "SenderId": "User1",
+    "Text": "g",
+    "CreatedAt": "2026-03-14T19:31:59.4722924+02:00",
+    "DeliveryStatus": {}
+  },
+  {
+    "MessageId": "e540fc25-3116-4f39-976f-4c9171131a8c",
+    "ConversationId": "Postman",
+    "SenderId": "User1",
+    "Text": "type your messege here...",
+    "CreatedAt": "2026-03-15T15:20:44.0703102+02:00",
+    "DeliveryStatus": {}
+  },
+  {
+    "MessageId": "f61ada61-afa7-4bd7-9213-322796abf271",
+    "ConversationId": "User1",
+    "SenderId": "Postman",
+    "Text": "?",
+    "CreatedAt": "2026-03-15T15:20:56.0941421+02:00",
     "DeliveryStatus": {}
   }
 ]

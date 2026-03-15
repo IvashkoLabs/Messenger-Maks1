@@ -12,7 +12,7 @@ namespace Messenger_Maks.Storage
     class JsonStorage
     {
         private readonly string _filePath = "messages_db.json";
-
+        private const string UserFile = "users_db.json";
         public void SaveMessages(List<MessageModel> messages)
         {
             string json = JsonConvert.SerializeObject(messages, Formatting.Indented);
@@ -26,5 +26,10 @@ namespace Messenger_Maks.Storage
             string json = File.ReadAllText(_filePath);
             return JsonConvert.DeserializeObject<List<MessageModel>>(json);
         }
+        public void SaveUsers(List<string> users) =>
+            File.WriteAllText(UserFile, JsonConvert.SerializeObject(users));
+
+        public List<string> LoadUsers() =>
+            File.Exists(UserFile) ? JsonConvert.DeserializeObject<List<string>>(File.ReadAllText(UserFile)) : new List<string> { "Admin" };
     }
 }

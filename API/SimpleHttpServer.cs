@@ -9,6 +9,7 @@ using System.Net;
 using Newtonsoft.Json;
 using Messenger_Maks.Models;
 using Messenger_Maks.Services;
+using System.Windows.Forms;
 namespace Messenger_Maks.API
 {
     class SimpleHttpServer
@@ -37,13 +38,44 @@ namespace Messenger_Maks.API
                     using (var reader = new System.IO.StreamReader(request.InputStream))
                     {
                         var json = await reader.ReadToEndAsync();
+                        System.Console.WriteLine("Postman send: " + json);
+                        MessageBox.Show("Postman send: " + json, "Postman", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         var msg = JsonConvert.DeserializeObject<MessageModel>(json);
                         _service.SendMessage(msg);
                     }
                     byte[] buffer = Encoding.UTF8.GetBytes("{\"status\":\"sent\"}");
                     response.OutputStream.Write(buffer, 0, buffer.Length);
-                }
 
+                }
+                else if (request.HttpMethod == "POST" && request.Url.AbsolutePath == "/users")
+                {
+                    using (var reader = new System.IO.StreamReader(request.InputStream))
+                    {
+                        var json = await reader.ReadToEndAsync();
+                        var data = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+
+                        if (data != null && data.ContainsKey("Username"))
+                        {
+                            try
+                            {
+                                // Намагаємось створити
+                                MessengerServer.Service.CreateUser(data["Username"]);
+
+                                byte[] buffer = Encoding.UTF8.GetBytes("{\"status\":\"user created\"}");
+                                response.ContentType = "application/json";
+                                response.OutputStream.Write(buffer, 0, buffer.Length);
+                            }
+                            catch (Exception ex)
+                            {
+                                // Якщо ім'я зайняте, відправляємо Postman-у помилку 400 Bad Request
+                                byte[] buffer = Encoding.UTF8.GetBytes($"{{\"error\":\"{ex.Message}\"}}");
+                                response.StatusCode = 400;
+                                response.ContentType = "application/json";
+                                response.OutputStream.Write(buffer, 0, buffer.Length);
+                            }
+                        }
+                    }
+                }
                 else if (request.HttpMethod == "GET" && request.Url.AbsolutePath == "/history")
                 {
                     var history = _service.GetAllMessages(); 
@@ -57,5 +89,20 @@ namespace Messenger_Maks.API
                 response.Close();
             }
         }
+        public void Stop()
+        {
+            if (_listener != null && _listener.IsListening)
+            {
+                _listener.Stop();
+                _listener.Close();
+            }
+        }
     }
 }
+/*
+{
+    "SenderId": "Postman",
+  "ConversationId": "General",
+  "Text": "this messege was sent by API postman"
+}
+*/

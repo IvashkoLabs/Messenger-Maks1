@@ -12,14 +12,14 @@ C:\Users\ivani\source\repos\Messenger Maks\Messenger Maks\obj\Debug\Messenger Ma
 C:\Users\ivani\source\repos\Messenger-Maks1\bin\Debug\Messenger Maks.exe.config
 C:\Users\ivani\source\repos\Messenger-Maks1\bin\Debug\Messenger Maks.exe
 C:\Users\ivani\source\repos\Messenger-Maks1\bin\Debug\Messenger Maks.pdb
+C:\Users\ivani\source\repos\Messenger-Maks1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ivani\source\repos\Messenger-Maks1\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ivani\source\repos\Messenger-Maks1\obj\Debug\Messenger Maks.csproj.AssemblyReference.cache
 C:\Users\ivani\source\repos\Messenger-Maks1\obj\Debug\Messenger_Maks.ChatForm.resources
 C:\Users\ivani\source\repos\Messenger-Maks1\obj\Debug\Messenger_Maks.Form1.resources
 C:\Users\ivani\source\repos\Messenger-Maks1\obj\Debug\Messenger_Maks.Properties.Resources.resources
 C:\Users\ivani\source\repos\Messenger-Maks1\obj\Debug\Messenger Maks.csproj.GenerateResource.cache
 C:\Users\ivani\source\repos\Messenger-Maks1\obj\Debug\Messenger Maks.csproj.CoreCompileInputs.cache
+C:\Users\ivani\source\repos\Messenger-Maks1\obj\Debug\Messenge.1699553C.Up2Date
 C:\Users\ivani\source\repos\Messenger-Maks1\obj\Debug\Messenger Maks.exe
 C:\Users\ivani\source\repos\Messenger-Maks1\obj\Debug\Messenger Maks.pdb
-C:\Users\ivani\source\repos\Messenger-Maks1\bin\Debug\Newtonsoft.Json.dll
-C:\Users\ivani\source\repos\Messenger-Maks1\bin\Debug\Newtonsoft.Json.xml
-C:\Users\ivani\source\repos\Messenger-Maks1\obj\Debug\Messenge.1699553C.Up2Date

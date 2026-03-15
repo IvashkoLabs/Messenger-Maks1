@@ -106,5 +106,7 @@ namespace Messenger_Maks
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button SendButton;
+
     }
+
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Messenger_Maks.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,30 +16,39 @@ namespace Messenger_Maks
         public Form1()
         {
             InitializeComponent();
+            RefreshUserList();
+            MessengerServer.Service.OnUserListChanged += () =>
+            {
+                this.Invoke(new Action(RefreshUserList));
+            };
+            }
+        private void RefreshUserList()
+        {
+            userListBox.Items.Clear();
+            foreach (var user in MessengerServer.Service.GetAllUsers())
+                userListBox.Items.Add(user);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            ChatForm chat = new ChatForm("User1");
-            chat.Show();
+            if (userListBox.SelectedItem == null) return;
+            new ChatForm(userListBox.SelectedItem.ToString()).Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnCreate_Click(object sender, EventArgs e)
         {
-            ChatForm chat = new ChatForm("User2");
-            chat.Show();
+            try
+            {
+                MessengerServer.Service.CreateUser(userNameTextBox.Text);
+                RefreshUserList();
+                userNameTextBox.Clear();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Name is empty or taken", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            ChatForm chat = new ChatForm("User3");
-            chat.Show();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            ChatForm chat = new ChatForm("Admin");
-            chat.Show();
-        }
     }
 }

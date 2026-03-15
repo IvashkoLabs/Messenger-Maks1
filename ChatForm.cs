@@ -23,29 +23,40 @@ namespace Messenger_Maks
             _currentUser = userName;
             this.Text = "Chat: " + _currentUser;
 
+            var allUsers = MessengerServer.Service.GetAllUsers();
+
             if (_currentUser == "Admin")
             {
-                for (int i = 1; i < 4; i++)
+                // 1. Спочатку додаємо всі нотатки (крім адмінських)
+                foreach (var user in allUsers)
                 {
-                    string chatname = "User" + i + " notes";
-                    listBox1.Items.Add(chatname);
-                    chatname = "User" + i + "-User"+((i+1)%(3)).ToString();
-                    listBox1.Items.Add(chatname);
+                    if (user != "Admin")
+                        listBox1.Items.Add(user + " notes");
+                }
+
+                // 2. Створюємо ВСІ можливі пари для приватних чатів
+                for (int i = 0; i < allUsers.Count; i++)
+                {
+                    for (int j = i + 1; j < allUsers.Count; j++)
+                    {
+                        // Перевіряємо, щоб Адмін не створював чат сам із собою чи з іншим Адміном
+                        if (allUsers[i] != "Admin" && allUsers[j] != "Admin")
+                        {
+                            listBox1.Items.Add($"{allUsers[i]}-{allUsers[j]}");
+                        }
+                    }
                 }
             }
             else
             {
-                for(int i = 1; i < 4; i++) 
+                foreach (var user in allUsers)
                 {
-                    string chatname = "User" + i;
-                    listBox1.Items.Add(chatname);
+                    if(user != "Admin")
+                    listBox1.Items.Add(user);
                 }
             }
             listBox1.Items.Add("General Chat");
-
             MessengerServer.OnNewMessage += MessengerServer_OnNewMessage;
-
-            this.FormClosing += (s, e) => MessengerServer.OnNewMessage -= MessengerServer_OnNewMessage;
         }
 
         private void ChatForm_FormClosing(object sender, FormClosingEventArgs e)

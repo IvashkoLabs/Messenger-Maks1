@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Messenger_Maks
 {
-    public partial class Form1: Form
+    public partial class Form1: Form//First window with all users and + new users
     {
         public Form1()
         {
@@ -21,7 +21,7 @@ namespace Messenger_Maks
             {
                 this.Invoke(new Action(RefreshUserList));
             };
-            }
+        }
         private void RefreshUserList()
         {
             userListBox.Items.Clear();
@@ -31,23 +31,21 @@ namespace Messenger_Maks
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (userListBox.SelectedItem == null) return;
+            //if (userListBox.SelectedItem == null) return;
             new ChatForm(userListBox.SelectedItem.ToString()).Show();
         }
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+           // {
                 MessengerServer.Service.CreateUser(userNameTextBox.Text);
                 RefreshUserList();
                 userNameTextBox.Clear();
-            }
-            catch (Exception ex)
-            {
+            //}
+            //catch (Exception ex){
 
-                MessageBox.Show(ex.Message, "Name is empty or taken", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+                //MessageBox.Show(ex.Message, "Name is empty or taken", MessageBoxButtons.OK, MessageBoxIcon.Warning);}
         }
 
     }

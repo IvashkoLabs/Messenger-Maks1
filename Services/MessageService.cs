@@ -19,7 +19,6 @@ namespace Messenger_Maks.Services
         private List<string> _users;
         public MessageService()
         {
-
             _allMessages = _storage.LoadMessages();
             _users = _storage.LoadUsers();
         }
@@ -31,27 +30,17 @@ namespace Messenger_Maks.Services
             _allMessages.Add(msg);
             _storage.SaveMessages(_allMessages); 
 
-            OnNewMessage?.Invoke(msg);
+            OnNewMessage?.Invoke(msg);//event
         }
 
         public List<MessageModel> GetAllMessages()
-        {
-            return _allMessages;
-        }
+        {return _allMessages;}
         public List<MessageModel> GetHistory(string conversationId)
-        {
-            return _allMessages.Where(m => m.ConversationId == conversationId).ToList();
-        }
+        {return _allMessages.Where(m => m.ConversationId == conversationId).ToList();}
 
 
         public void CreateUser(string username)
         {
-            if (string.IsNullOrWhiteSpace(username))
-                throw new ArgumentException("username can't be empty");
-
-            if (_users.Contains(username))
-                throw new Exception("This name is already taken.");
-
             _users.Add(username);
             _storage.SaveUsers(_users);
             OnUserListChanged?.Invoke();

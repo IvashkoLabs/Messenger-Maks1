@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using static System.Net.Mime.MediaTypeNames;
+using System.Security.Cryptography;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
-
+    /*
 namespace Messenger_Maks.Models
 {
     public class MessageModel
@@ -25,3 +28,17 @@ namespace Messenger_Maks.Models
 
     }
 }
+   */
+
+import uuid
+from datetime import datetime
+
+class MessageModel :
+    def __init__(self, sender_id=None, conversation_id=None, text=None):
+        self.MessageId = uuid.uuid4()  # phenomenal ID
+        self.ConversationId = conversation_id  # "General" / "User1-User2"
+        self.SenderId = sender_id
+        self.Text = text
+        self.CreatedAt = datetime.now()
+        self.DeliveryStatus = { }
+*/

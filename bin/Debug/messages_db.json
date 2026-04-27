@@ -9,7 +9,8 @@
       "User1": true,
       "Admin": true,
       "User2": true,
-      "User3": true
+      "User3": true,
+      "1234": true
     }
   },
   {
@@ -46,7 +47,8 @@
       "User2": true,
       "User3": true,
       "User1": true,
-      "Admin": true
+      "Admin": true,
+      "1234": true
     }
   },
   {
@@ -58,7 +60,8 @@
     "DeliveryStatus": {
       "User3": true,
       "User1": true,
-      "Admin": true
+      "Admin": true,
+      "1234": true
     }
   },
   {
@@ -70,7 +73,8 @@
     "DeliveryStatus": {
       "User3": true,
       "User1": true,
-      "Admin": true
+      "Admin": true,
+      "1234": true
     }
   },
   {
@@ -82,7 +86,8 @@
     "DeliveryStatus": {
       "User3": true,
       "User1": true,
-      "Admin": true
+      "Admin": true,
+      "1234": true
     }
   },
   {
@@ -102,7 +107,8 @@
     "DeliveryStatus": {
       "User3": true,
       "User1": true,
-      "Admin": true
+      "Admin": true,
+      "1234": true
     }
   },
   {
@@ -113,7 +119,8 @@
     "CreatedAt": "2026-03-12T08:53:09.7662814+02:00",
     "DeliveryStatus": {
       "User1": true,
-      "Admin": true
+      "Admin": true,
+      "1234": true
     }
   },
   {
@@ -124,7 +131,8 @@
     "CreatedAt": "2026-03-12T08:59:01.923655+02:00",
     "DeliveryStatus": {
       "Admin": true,
-      "User1": true
+      "User1": true,
+      "1234": true
     }
   },
   {
@@ -135,7 +143,8 @@
     "CreatedAt": "2026-03-14T19:31:16.0748141+02:00",
     "DeliveryStatus": {
       "Admin": true,
-      "User1": true
+      "User1": true,
+      "1234": true
     }
   },
   {
@@ -168,6 +177,40 @@
     "SenderId": "Postman",
     "Text": "?",
     "CreatedAt": "2026-03-15T15:20:56.0941421+02:00",
+    "DeliveryStatus": {}
+  },
+  {
+    "MessageId": "59b2a887-3ab0-45c9-ab13-aab93182a888",
+    "ConversationId": "General",
+    "SenderId": "1234",
+    "Text": "type your messege here...",
+    "CreatedAt": "2026-03-26T08:37:50.0325139+02:00",
+    "DeliveryStatus": {
+      "1234": true
+    }
+  },
+  {
+    "MessageId": "425e7bbc-3b7a-42d5-879f-30197834bc7d",
+    "ConversationId": "1234",
+    "SenderId": "1234",
+    "Text": "buy bread\r\n",
+    "CreatedAt": "2026-03-26T08:37:56.4077648+02:00",
+    "DeliveryStatus": {}
+  },
+  {
+    "MessageId": "28b68ec0-52d3-4248-a7be-8b93c301d00a",
+    "ConversationId": "User1",
+    "SenderId": "1234",
+    "Text": "123",
+    "CreatedAt": "2026-03-26T08:38:03.1536885+02:00",
+    "DeliveryStatus": {}
+  },
+  {
+    "MessageId": "735888c6-1085-4cca-953b-28006446b960",
+    "ConversationId": "Spiderman",
+    "SenderId": "Spiderman",
+    "Text": "type your messege here...",
+    "CreatedAt": "2026-04-22T23:07:54.1494723+03:00",
     "DeliveryStatus": {}
   }
 ]

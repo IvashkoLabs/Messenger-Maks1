@@ -27,23 +27,23 @@ namespace Messenger_Maks
 
             if (_currentUser == "Admin")
             {
-                // 1. Спочатку додаємо всі нотатки (крім адмінських)
                 foreach (var user in allUsers)
                 {
                     if (user != "Admin")
                         listBox1.Items.Add(user + " notes");
                 }
 
-                // 2. Створюємо ВСІ можливі пари для приватних чатів
                 for (int i = 0; i < allUsers.Count; i++)
                 {
-                    for (int j = i + 1; j < allUsers.Count; j++)
+                    Random rnd = new Random();
+                    int a= rnd.Next(-5,5);
+                    //a=1;
+                    for (int j = i + a; j < allUsers.Count; j++)
                     {
-                        // Перевіряємо, щоб Адмін не створював чат сам із собою чи з іншим Адміном
+
                         if (allUsers[i] != "Admin" && allUsers[j] != "Admin")
-                        {
-                            listBox1.Items.Add($"{allUsers[i]}-{allUsers[j]}");
-                        }
+                            listBox1.Items.Add($"{allUsers[i]}-{allUsers[j]}");//chat between all users
+                        
                     }
                 }
             }
@@ -59,11 +59,7 @@ namespace Messenger_Maks
             MessengerServer.OnNewMessage += MessengerServer_OnNewMessage;
         }
 
-        private void ChatForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-            MessengerServer.OnNewMessage -= MessengerServer_OnNewMessage;
-        }
+        private void ChatForm_FormClosing(object sender, FormClosingEventArgs e) {MessengerServer.OnNewMessage -= MessengerServer_OnNewMessage;}
 
         private void MessengerServer_OnNewMessage(MessageModel msg)
         {
@@ -92,10 +88,8 @@ namespace Messenger_Maks
             }
 
             else
-            {
                 shouldShow = (msg.SenderId == selected && msg.ConversationId == _currentUser) || (msg.SenderId == _currentUser && msg.ConversationId == selected);
-            }
-
+            
             if (shouldShow)
             {
                 this.Invoke(new Action(() => 
@@ -108,11 +102,11 @@ namespace Messenger_Maks
         private void SendButton_Click(object sender, EventArgs e)
         {
             //Debug.WriteLine($"Sendm messege {textBox1.Text} from {sender} to {listBox1.SelectedItem.ToString()} ");
-            if (listBox1.SelectedItem == null)
-            {
-                MessageBox.Show("no chat selected");
-                return;
-            }
+           // if (listBox1.SelectedItem == null)
+            //{
+            //    MessageBox.Show("no chat selected");
+            //    return;
+            //}
             string text = textBox1.Text;
             string selected = listBox1.SelectedItem.ToString();
 
@@ -125,7 +119,7 @@ namespace Messenger_Maks
 
         private void AddMessageBubble(string text, bool isMe, string authorName, MessageModel msg)
         {
-
+            //viusals
             Panel pnl = new Panel();
             pnl.AutoSize = true;
             pnl.Padding = new Padding(10);
@@ -139,6 +133,7 @@ namespace Messenger_Maks
             content.Font = new Font("Segoe UI", 10); 
             content.MaximumSize = new Size(300, 0);
             content.Location = new Point(10, 10);
+            //delivery
             pnl.Controls.Add(content);
 
             var deliveredTo = msg.DeliveryStatus.Where(x => x.Value == true&& x.Key != "Admin"&& x.Key != authorName).Select(x => x.Key).ToList();
@@ -161,9 +156,7 @@ namespace Messenger_Maks
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            RefreshChat();
-        }
+        {RefreshChat();}
 
         private void RefreshChat()
         {

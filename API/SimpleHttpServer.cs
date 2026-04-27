@@ -21,7 +21,7 @@ namespace Messenger_Maks.API
         {
             _listener = new HttpListener();
             _listener.Prefixes.Add("http://localhost:5000/"); // listen to port 5000 
-            _listener.Start();
+            //_listener.Start();
             Task.Run(() => Listen());
         }
 
@@ -43,7 +43,8 @@ namespace Messenger_Maks.API
                         var msg = JsonConvert.DeserializeObject<MessageModel>(json);
                         _service.SendMessage(msg);
                     }
-                    byte[] buffer = Encoding.UTF8.GetBytes("{\"status\":\"sent\"}");
+                    byte[] buffer = "{\"status\":\"sent\"}";
+                    //byte[] buffer = Encoding.UTF8.GetBytes("{\"status\":\"sent\"}");
                     response.OutputStream.Write(buffer, 0, buffer.Length);
 
                 }
@@ -58,7 +59,6 @@ namespace Messenger_Maks.API
                         {
                             try
                             {
-                                // Намагаємось створити
                                 MessengerServer.Service.CreateUser(data["Username"]);
 
                                 byte[] buffer = Encoding.UTF8.GetBytes("{\"status\":\"user created\"}");
@@ -67,7 +67,6 @@ namespace Messenger_Maks.API
                             }
                             catch (Exception ex)
                             {
-                                // Якщо ім'я зайняте, відправляємо Postman-у помилку 400 Bad Request
                                 byte[] buffer = Encoding.UTF8.GetBytes($"{{\"error\":\"{ex.Message}\"}}");
                                 response.StatusCode = 400;
                                 response.ContentType = "application/json";
@@ -101,8 +100,12 @@ namespace Messenger_Maks.API
 }
 /*
 {
-    "SenderId": "Postman",
+  "SenderId": "Postman",
   "ConversationId": "General",
   "Text": "this messege was sent by API postman"
+}
+
+{
+  "Username": "гіук тфьу"
 }
 */

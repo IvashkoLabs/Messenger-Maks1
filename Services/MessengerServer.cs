@@ -21,8 +21,6 @@ namespace Messenger_Maks.Services
         public static List<MessageModel> AllHistory => Service.GetAllMessages();
 
         public static void Send(MessageModel msg)
-        {
-            Service.SendMessage(msg);
-        }
+        {Service.SendMessage(msg);}
     }
 }

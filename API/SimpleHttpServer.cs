@@ -43,8 +43,8 @@ namespace Messenger_Maks.API
                         var msg = JsonConvert.DeserializeObject<MessageModel>(json);
                         _service.SendMessage(msg);
                     }
-                    byte[] buffer = "{\"status\":\"sent\"}";
-                    //byte[] buffer = Encoding.UTF8.GetBytes("{\"status\":\"sent\"}");
+                   // byte[] buffer = "{\"status\":\"sent\"}";
+                    byte[] buffer = Encoding.UTF8.GetBytes("{\"status\":\"sent\"}");
                     response.OutputStream.Write(buffer, 0, buffer.Length);
 
                 }

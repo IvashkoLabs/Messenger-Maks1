@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
-    /*
+    
 namespace Messenger_Maks.Models
 {
     public class MessageModel
@@ -28,7 +28,7 @@ namespace Messenger_Maks.Models
 
     }
 }
-   */
+   /*
 
 import uuid
 from datetime import datetime

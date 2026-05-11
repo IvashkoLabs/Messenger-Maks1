@@ -3,23 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5BD5567E-1EE6-4FCD-A861-119967771AC1}|..\\TestProject1\\TestProject1.csproj|c:\\users\\ivani\\source\\repos\\testproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\storage\\jsonstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|solutionrelative:storage\\jsonstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\services\\messengerserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|solutionrelative:services\\messengerserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BD5567E-1EE6-4FCD-A861-119967771AC1}|..\\TestProject1\\TestProject1.csproj|c:\\users\\ivani\\source\\repos\\testproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|solutionrelative:services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\models\\messagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|c:\\users\\ivani\\source\\repos\\messenger-maks1\\models\\messagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|solutionrelative:models\\messagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Messenger Maks||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\api\\simplehttpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,6 +37,18 @@
       "RelativeMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|solutionrelative:services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\services\\messengerserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|solutionrelative:services\\messengerserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\chatform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|solutionrelative:chatform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
@@ -50,13 +61,6 @@
       "RelativeMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Messenger Maks||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5BD5567E-1EE6-4FCD-A861-119967771AC1}|..\\TestProject1\\TestProject1.csproj|c:\\users\\ivani\\source\\repos\\testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -66,9 +70,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\JsonStorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:JsonStorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DC19826-005C-49F3-B2A5-C23690293CCC}|Messenger Maks.csproj|c:\\users\\ivani\\source\\repos\\messenger-maks1\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|a54ad834-9219-4aa6-b589-607af21c3e26"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,11 +79,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-05-10T13:46:52.089Z"
             },
             {
               "$type": "Document",
@@ -92,10 +105,9 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA1wCcAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T14:41:09.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T14:41:09.579Z"
             },
             {
               "$type": "Document",
@@ -107,8 +119,7 @@
               "RelativeToolTip": "Form1.Designer.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAYwF0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T14:39:53.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T14:39:53.483Z"
             },
             {
               "$type": "Document",
@@ -118,10 +129,9 @@
               "RelativeDocumentMoniker": "ChatForm.cs",
               "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\ChatForm.cs",
               "RelativeToolTip": "ChatForm.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAowCcAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAowCcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T17:06:33.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T17:06:33.873Z"
             },
             {
               "$type": "Document",
@@ -131,108 +141,32 @@
               "RelativeDocumentMoniker": "API\\SimpleHttpServer.cs",
               "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\API\\SimpleHttpServer.cs",
               "RelativeToolTip": "API\\SimpleHttpServer.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwCUAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T16:18:13.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T16:18:13.208Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ChatForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\ChatForm.Designer.cs",
-              "RelativeDocumentMoniker": "ChatForm.Designer.cs",
-              "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\ChatForm.Designer.cs",
-              "RelativeToolTip": "ChatForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T17:21:40.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T16:04:40.643Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MessageModel.cs",
-              "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Models\\MessageModel.cs",
-              "RelativeDocumentMoniker": "Models\\MessageModel.cs",
-              "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Models\\MessageModel.cs",
-              "RelativeToolTip": "Models\\MessageModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T16:05:56.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\TestProject1\\UnitTest1.cs",
               "RelativeDocumentMoniker": "..\\TestProject1\\UnitTest1.cs",
               "ToolTip": "C:\\Users\\ivani\\source\\repos\\TestProject1\\UnitTest1.cs",
               "RelativeToolTip": "..\\TestProject1\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-10T16:31:42.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Messenger Maks",
-              "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Messenger Maks.csproj",
-              "RelativeDocumentMoniker": "Messenger Maks.csproj",
-              "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Messenger Maks.csproj",
-              "RelativeToolTip": "Messenger Maks.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-03-14T15:39:28.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MessengerServer.cs",
-              "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Services\\MessengerServer.cs",
-              "RelativeDocumentMoniker": "Services\\MessengerServer.cs",
-              "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Services\\MessengerServer.cs",
-              "RelativeToolTip": "Services\\MessengerServer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T16:22:47.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ChatForm.resx",
-              "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\ChatForm.resx",
-              "RelativeDocumentMoniker": "ChatForm.resx",
-              "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\ChatForm.resx",
-              "RelativeToolTip": "ChatForm.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-03-14T17:21:36.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "JsonStorage.cs",
               "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Storage\\JsonStorage.cs",
               "RelativeDocumentMoniker": "Storage\\JsonStorage.cs",
               "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Storage\\JsonStorage.cs",
               "RelativeToolTip": "Storage\\JsonStorage.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwCQAAACKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T16:07:32.069Z",
               "EditorCaption": ""
@@ -240,6 +174,76 @@
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T16:04:40.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ChatForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\ChatForm.Designer.cs",
+              "RelativeDocumentMoniker": "ChatForm.Designer.cs",
+              "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\ChatForm.Designer.cs",
+              "RelativeToolTip": "ChatForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T17:21:40.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MessageModel.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Models\\MessageModel.cs",
+              "RelativeDocumentMoniker": "Models\\MessageModel.cs",
+              "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Models\\MessageModel.cs",
+              "RelativeToolTip": "Models\\MessageModel.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvysAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T16:05:56.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Messenger Maks",
+              "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Messenger Maks.csproj",
+              "RelativeDocumentMoniker": "Messenger Maks.csproj",
+              "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Messenger Maks.csproj",
+              "RelativeToolTip": "Messenger Maks.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-14T15:39:28.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MessengerServer.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Services\\MessengerServer.cs",
+              "RelativeDocumentMoniker": "Services\\MessengerServer.cs",
+              "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Services\\MessengerServer.cs",
+              "RelativeToolTip": "Services\\MessengerServer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T16:22:47.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ChatForm.resx",
+              "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\ChatForm.resx",
+              "RelativeDocumentMoniker": "ChatForm.resx",
+              "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\ChatForm.resx",
+              "RelativeToolTip": "ChatForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-03-14T17:21:36.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "TestProject1.csproj",
               "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\TestProject1\\TestProject1.csproj",
               "RelativeDocumentMoniker": "..\\TestProject1\\TestProject1.csproj",
@@ -247,25 +251,23 @@
               "RelativeToolTip": "..\\TestProject1\\TestProject1.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-10T17:01:53.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T17:01:53.504Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "MessageService.cs",
               "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Services\\MessageService.cs",
               "RelativeDocumentMoniker": "Services\\MessageService.cs",
               "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Services\\MessageService.cs",
               "RelativeToolTip": "Services\\MessageService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACkAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T16:08:15.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T16:08:15.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -273,24 +275,22 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T15:23:43.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T15:23:43.251Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ChatForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\ChatForm.cs",
               "RelativeDocumentMoniker": "ChatForm.cs",
               "ToolTip": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\ChatForm.cs [Design]",
               "RelativeToolTip": "ChatForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T16:04:42.638Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-03-09T16:04:42.638Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "JsonStorage.cs",
               "DocumentMoniker": "C:\\Users\\ivani\\source\\repos\\Messenger-Maks1\\JsonStorage.cs",
               "RelativeDocumentMoniker": "JsonStorage.cs",
